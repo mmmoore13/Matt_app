@@ -1,4 +1,5 @@
 MattApp::Application.routes.draw do
+  devise_for :users
   resources :posts
 
   get "static_pages/home"
